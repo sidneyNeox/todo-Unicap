@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>To-do List</title>
+    <script src="script.js" defer></script>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="containerTable">
+        <h1>Lista de atividades</h1>
+        <table>
+            <thead>
+                <th>Feito</th>
+                <th>Descrição</th>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>
+                        <input type="checkbox" name="check" id="inputCheck">
+                    </td>
+                    <td>
+                        <input type="text" name="descricao" id="inputDescricao">
+                    </td>
+                    <td>
+                        <button type="submit" id="btAdicionar">Adicionar</button>
+                    </td>
+                </tr>
+            </tbody>
+        </table> <br>
+        <table>
+            <thead>
+                <th>Feito</th>
+                <th>Descrição</th>
+                <th>Remover</th>
+            </thead>
+            <tbody id="lista">
+            </tbody>
+        </table>
+        <button type="submit" id="btBuscar">Atualizar</button>
+    </div>
+</body>
+</html>
